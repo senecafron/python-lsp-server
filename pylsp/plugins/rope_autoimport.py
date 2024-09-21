@@ -16,7 +16,7 @@ from pylsp import hookimpl
 from pylsp.config.config import Config
 from pylsp.workspace import Document, Workspace
 
-from ._rope_task_handle import PylspTaskHandle
+from pylsp.plugins._rope_task_handle import PylspTaskHandle
 
 log = logging.getLogger(__name__)
 

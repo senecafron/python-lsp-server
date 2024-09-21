@@ -13,7 +13,7 @@ from typing import Callable, Generator, List, Optional
 
 import jedi
 
-from . import _utils, lsp, uris
+from pylsp import _utils, lsp, uris
 
 log = logging.getLogger(__name__)
 

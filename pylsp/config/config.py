@@ -55,13 +55,13 @@ class Config:
 
         self._config_sources = {}
         try:
-            from .flake8_conf import Flake8Config
+            from pylsp.config.flake8_conf import Flake8Config
 
             self._config_sources["flake8"] = Flake8Config(self._root_path)
         except ImportError:
             pass
         try:
-            from .pycodestyle_conf import PyCodeStyleConfig
+            from pylsp.config.pycodestyle_conf import PyCodeStyleConfig
 
             self._config_sources["pycodestyle"] = PyCodeStyleConfig(self._root_path)
         except ImportError:

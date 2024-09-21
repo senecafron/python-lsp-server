@@ -18,10 +18,10 @@ from pylsp_jsonrpc.dispatchers import MethodDispatcher
 from pylsp_jsonrpc.endpoint import Endpoint
 from pylsp_jsonrpc.streams import JsonRpcStreamReader, JsonRpcStreamWriter
 
-from . import _utils, lsp, uris
-from ._version import __version__
-from .config import config
-from .workspace import Cell, Document, Notebook, Workspace
+from pylsp import _utils, lsp, uris
+__version__ = "1.11.0"
+from pylsp.config import config
+from pylsp.workspace import Cell, Document, Notebook, Workspace
 
 log = logging.getLogger(__name__)
 

@@ -12,8 +12,7 @@ try:
 except Exception:
     import json
 
-from ._version import __version__
-from .python_lsp import (
+from pylsp.python_lsp import (
     PythonLSPServer,
     start_io_lang_server,
     start_tcp_lang_server,
@@ -63,7 +62,7 @@ def add_arguments(parser):
     )
 
     parser.add_argument(
-        "-V", "--version", action="version", version="%(prog)s v" + __version__
+        "-V", "--version", action="version", version="%(prog)s v" + "1.11.0"
     )
 
 

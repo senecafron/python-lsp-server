@@ -5,8 +5,8 @@ import os
 
 import pluggy
 
-from . import _version
-from ._version import __version__
+# from . import _version
+# from pylsp._version import __version__
 
 
 def convert_version_info(version: str) -> (int, ..., str):
@@ -22,7 +22,7 @@ def convert_version_info(version: str) -> (int, ..., str):
     return tuple(version_info)
 
 
-_version.VERSION_INFO = convert_version_info(__version__)
+# _version.VERSION_INFO = convert_version_info(__version__)
 
 PYLSP = "pylsp"
 IS_WIN = os.name == "nt"
